@@ -136,21 +136,21 @@ h1 {
 @media only screen and (max-width: 480px) {
     .container {
         max-width: 100%;
-        top: 0;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 25px;
     }
 
     .bottom {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
     }
 
     .app input {
