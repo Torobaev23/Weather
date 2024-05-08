@@ -8,7 +8,7 @@ export default function App() {
 
     const searchLocation = (event) => {
         const trimmedLocation = location.trim();
-        if ((event.key === "Enter" && trimmedLocation !== "") || event.key.trim() === "") {
+        if ((event.key === "Enter")) {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${trimmedLocation}&units=metric&lang=ru&appid=875619ba74aa91c2a603e42a5ba1ede1`;
             console.log(url);
             axios.get(url).then((response) => {
@@ -27,12 +27,12 @@ export default function App() {
         <div className="app">
             <div className="search">
                 <input
-                    value={location}
                     onChange={(event) => setLocation(event.target.value)}
                     onKeyPress={searchLocation}
-                    placeholder="введите город"
+                    placeholder="Введите город"
                     type='text'
                 />
+
             </div>
             <div className='container'>
                 <div className='top'>
